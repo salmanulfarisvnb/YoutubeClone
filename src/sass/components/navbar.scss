@@ -1,0 +1,50 @@
+@use "../utils" as *;
+
+.navbar {
+  @include flex();
+  justify-content: space-between;
+  &__left-side {
+    @include flex();
+    img {
+      width: rem(25);
+      margin-right: rem(20);
+
+      ~ .logo {
+        width: rem(120);
+      }
+    }
+  }
+
+  &__middile-side {
+    border: rem(1) solid grey;
+    padding: rem(8) rem(10);
+    border-radius: rem(20);
+    .search-box {
+      @include flex();
+      img {
+        width: rem(20);
+        margin-left: rem(10);
+      }
+
+      input {
+        width: rem(280);
+        border: none;
+        outline: none;
+        font-size: rem(18);
+      }
+    }
+  }
+
+  &__right-side {
+    @include flex();
+
+    img {
+      width: rem(30);
+      margin-right: rem(15);
+
+      ~ .profile-pic {
+        margin-right: 0;
+      }
+    }
+  }
+}
