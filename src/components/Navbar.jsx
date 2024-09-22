@@ -7,11 +7,15 @@ import notification from "../assets/notification.png";
 import profile from "../assets/user_profile.jpg";
 import searchIcon from "../assets/search.png";
 
-const Navbar = () => {
+const Navbar = ({ setSidebar }) => {
   return (
     <nav className="navbar">
       <div className="navbar__left-side">
-        <img src={menuIcon} alt="menuIcon" />
+        <img
+          onClick={() => setSidebar((prew) => (prew === true ? false : true))}
+          src={menuIcon}
+          alt="menuIcon"
+        />
         <img className="logo" src={logo} alt="" />
       </div>
       <div className="navbar__middile-side">
