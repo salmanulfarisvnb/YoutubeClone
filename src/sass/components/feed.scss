@@ -1,0 +1,36 @@
+@use "../utils" as *;
+
+.feed {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(rem(250), 1fr));
+  gap: rem(15) rem(15);
+
+  h2 {
+    font-size: rem(18);
+    font-weight: 600;
+
+    ~ h3 {
+      font-size: rem(15);
+      color: rgb(79, 71, 71);
+    }
+  }
+}
+
+// import React from "react";
+// import Navbar from "./components/Navbar";
+// import Home from "./pages/Home";
+// import Video from "./pages/Video";
+// import { useState } from "react";
+
+// const App = () => {
+//   const [sidebar, setSidebar] = useState(true);
+//   return (
+//     <>
+//       <Navbar setSidebar={setSidebar} />
+//       <Home sidebar={sidebar} />
+//       <Video />
+//     </>
+//   );
+// };
+
+// export default App;

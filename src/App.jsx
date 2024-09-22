@@ -1,18 +1,18 @@
-import React from "react";
-import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Video from "./pages/Video";
-import { useState } from "react";
 
-const App = () => {
-  const [sidebar, setSidebar] = useState(true);
+function App() {
   return (
     <>
-      <Navbar setSidebar={setSidebar} />
-      <Home sidebar={sidebar} />
-      <Video />
+      <h1>helooo</h1>
+      <Router basename="/YoutubeClone">
+        <Switch>
+          <Route path="./pages/Video.jsx" element={<Video />} />
+          {/* Add other routes here */}
+        </Switch>
+      </Router>
     </>
   );
-};
+}
 
 export default App;
