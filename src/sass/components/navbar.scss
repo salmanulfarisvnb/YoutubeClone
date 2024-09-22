@@ -1,6 +1,9 @@
 @use "../utils" as *;
 
 .navbar {
+  position: sticky;
+  background-color: white;
+  top: 0;
   @include flex();
   justify-content: space-between;
   padding: rem(10) rem(15);
