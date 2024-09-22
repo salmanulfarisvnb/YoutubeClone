@@ -1,0 +1,129 @@
+@use "../utils" as *;
+
+.play-video {
+  flex-basis: 69%;
+
+  p {
+    color: $grayColor;
+  }
+
+  h2 {
+    margin-top: rem(15);
+  }
+
+  &__info {
+    margin-top: rem(15);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: rem(20);
+
+    .views-times {
+      width: max-content;
+    }
+
+    &-icon {
+      display: inline-flex;
+    }
+
+    P {
+      margin-right: rem(25);
+
+      font-size: rem(15);
+    }
+
+    img {
+      width: rem(25);
+      margin-right: rem(10);
+    }
+  }
+
+  &__discription {
+    display: flex;
+    align-items: center;
+    margin-top: rem(15);
+
+    .channel-info {
+      flex: 1;
+    }
+
+    img {
+      width: rem(45);
+      margin-right: rem(20);
+      border-radius: 50%;
+    }
+
+    button {
+      background-color: #ff0000;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #cc0000;
+      }
+    }
+  }
+
+  &__comment {
+    margin-top: rem(15);
+    margin-left: rem(65);
+
+    p {
+      font-size: rem(16);
+      line-height: 1;
+    }
+
+    hr {
+      margin: rem(15) 0;
+    }
+
+    .user__active {
+      h3 {
+        color: $grayColor;
+      }
+
+      &__comment {
+        margin: rem(15) 0;
+        display: flex;
+        align-items: start;
+        img {
+          width: rem(45);
+          border-radius: 50%;
+          margin-right: rem(20);
+        }
+
+        h3 {
+          color: $color;
+          font-size: rem(16);
+          margin-bottom: rem(10);
+
+          span {
+            color: $grayColor;
+            font-size: rem(13);
+            margin-left: rem(10);
+          }
+        }
+
+        .comment__action {
+          display: inline-flex;
+          align-items: center;
+          margin: rem(20) 0;
+
+          img {
+            width: rem(25);
+            margin-right: rem(7);
+          }
+          span {
+            margin-right: rem(20);
+          }
+        }
+      }
+    }
+  }
+}

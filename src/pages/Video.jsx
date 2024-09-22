@@ -3,7 +3,7 @@ import PlayVideo from "../components/PlayVideo";
 
 const Video = () => {
   return (
-    <div className="video-contaner">
+    <div className="video-container">
       <PlayVideo />
     </div>
   );

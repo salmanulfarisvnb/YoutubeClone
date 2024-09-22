@@ -1,0 +1,6 @@
+@use "../utils" as *;
+.video-container {
+  display: flex;
+  padding: $paddingContainer;
+  height: 100vh;
+}
