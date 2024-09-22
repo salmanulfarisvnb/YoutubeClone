@@ -12,12 +12,12 @@ import { Link } from "react-router-dom";
 const Feed = () => {
   return (
     <div className="feed">
-      <div className="card">
+      <Link to={`video/20/4250`} className="card">
         <img src={thumbline1} alt="" />
         <h2>Amazing place of thailand</h2>
         <h3>SalmanVlog</h3>
         <p>1 M views &#x2022; 19 hours ago</p>
-      </div>
+      </Link>
       <div className="card">
         <img src={thumbline2} alt="" />
         <h2>Amazing place of thailand</h2>
