@@ -1,6 +1,8 @@
 @use "../utils" as *;
 .video-container {
+  justify-content: space-between;
+  flex-wrap: wrap;
   display: flex;
+  flex-direction: row;
   padding: $paddingContainer;
-  height: 100vh;
 }

@@ -2,6 +2,7 @@
 
 .play-video {
   flex-basis: 69%;
+  margin-right: rem(5);
 
   p {
     color: $grayColor;
@@ -106,6 +107,7 @@
           span {
             color: $grayColor;
             font-size: rem(13);
+            font-weight: 400;
             margin-left: rem(10);
           }
         }
