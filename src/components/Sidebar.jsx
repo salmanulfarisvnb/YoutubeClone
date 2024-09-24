@@ -1,4 +1,3 @@
-import React from "react";
 import home from "../assets/home.png";
 import automobiles from "../assets/automobiles.png";
 import blogs from "../assets/blogs.png";
@@ -13,6 +12,7 @@ import simon from "../assets/simon.png";
 import megan from "../assets/megan.png";
 import tom from "../assets/tom.png";
 import cameron from "../assets/cameron.png";
+import { api_key } from "../data";
 
 const Sidebar = ({ sidebar, category, setCategory }) => {
   return (
