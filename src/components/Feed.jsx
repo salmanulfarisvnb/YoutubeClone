@@ -8,8 +8,12 @@ import thumbline6 from "../assets/thumbnail6.png";
 import thumbline7 from "../assets/thumbnail7.png";
 import thumbline8 from "../assets/thumbnail8.png";
 import { Link } from "react-router-dom";
+import { api_key } from "../data";
 
-const Feed = () => {
+const Feed = ({ category }) => {
+  const fetchData = async () => {
+    const videoList_url = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=US&videoCategoryId=${category}&key=${api_key}`;
+  };
   return (
     <div className="feed">
       <Link to={`video/20/4250`} className="card">
