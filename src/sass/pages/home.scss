@@ -3,8 +3,15 @@
 .container {
   padding: rem(15) rem(15) 0 rem(240);
   background-color: $bgLight;
+  @include breakpointdown(sm) {
+    padding-left: rem(15);
+  }
 
   &.large-container {
     padding-left: rem(85);
+
+    @include breakpointdown(sm) {
+      padding-left: rem(15);
+    }
   }
 }

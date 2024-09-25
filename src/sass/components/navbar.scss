@@ -51,9 +51,15 @@
     img {
       width: rem(30);
       margin-left: rem(15);
+      @include breakpointdown(sm) {
+        display: none;
+      }
     }
     img:last-child {
       border-radius: 50%;
+      @include breakpointdown(sm) {
+        display: initial;
+      }
     }
   }
 }
