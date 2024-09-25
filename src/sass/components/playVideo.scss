@@ -22,11 +22,19 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: rem(20);
+    P {
+      margin-right: rem(25);
+
+      font-size: rem(15);
+    }
 
     @include breakpointdown(sm) {
       flex-direction: column;
       align-items: start;
       row-gap: rem(15);
+      p {
+        margin-right: rem(10);
+      }
     }
 
     .views-times {
@@ -35,12 +43,6 @@
 
     &-icon {
       display: inline-flex;
-    }
-
-    P {
-      margin-right: rem(25);
-
-      font-size: rem(15);
     }
 
     img {
