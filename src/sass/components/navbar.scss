@@ -28,6 +28,8 @@
         display: none;
         ~ .logo__small {
           display: initial;
+          margin-left: rem(10);
+          width: rem(28);
         }
       }
     }
