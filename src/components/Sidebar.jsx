@@ -25,26 +25,26 @@ const Sidebar = ({ sidebar, category, setCategory }) => {
           <img src={home} alt="" /> <p>Home</p>
         </div>
         <div
-          className={`side-link ${category === 9 ? "active" : ""}`}
-          onClick={() => setCategory(9)}
+          className={`side-link ${category === 28 ? "active" : ""}`}
+          onClick={() => setCategory(28)}
         >
           <img src={automobiles} alt="" /> <p>automobiles</p>
         </div>
         <div
-          className={`side-link ${category === 12 ? "active" : ""}`}
-          onClick={() => setCategory(12)}
+          className={`side-link ${category === 25 ? "active" : ""}`}
+          onClick={() => setCategory(25)}
         >
           <img src={blogs} alt="" /> <p>blogs</p>
         </div>
         <div
-          className={`side-link ${category === 13 ? "active" : ""}`}
-          onClick={() => setCategory(13)}
+          className={`side-link ${category === 17 ? "active" : ""}`}
+          onClick={() => setCategory(17)}
         >
           <img src={games} alt="" /> <p>games</p>
         </div>
         <div
-          className={`side-link ${category === 14 ? "active" : ""}`}
-          onClick={() => setCategory(14)}
+          className={`side-link ${category === 22 ? "active" : ""}`}
+          onClick={() => setCategory(22)}
         >
           <img src={sports} alt="" /> <p>sports</p>
         </div>
@@ -55,54 +55,39 @@ const Sidebar = ({ sidebar, category, setCategory }) => {
           <img src={entertainments} alt="" /> <p>entertainments</p>
         </div>
         <div
-          className={`side-link ${category === 16 ? "active" : ""}`}
-          onClick={() => setCategory(16)}
+          className={`side-link ${category === 23 ? "active" : ""}`}
+          onClick={() => setCategory(23)}
         >
           <img src={tech} alt="" /> <p>tech</p>
         </div>
         <div
-          className={`side-link ${category === 10 ? "active" : ""}`}
-          onClick={() => setCategory(10)}
+          className={`side-link ${category === 24 ? "active" : ""}`}
+          onClick={() => setCategory(24)}
         >
           <img src={music} alt="" /> <p>music</p>
         </div>
         <div
-          className={`side-link ${category === 11 ? "active" : ""}`}
-          onClick={() => setCategory(11)}
+          className={`side-link ${category === 26 ? "active" : ""}`}
+          onClick={() => setCategory(26)}
         >
           <img src={news} alt="" /> <p>news</p>
         </div>
         <hr />
         <div className="subscribed-list">
           <h3>SUBSCRIBED</h3>
-          <div
-            className={`side-link ${category === 17 ? "active" : ""}`}
-            onClick={() => setCategory(17)}
-          >
+          <div className="side-link">
             <img src={tom} alt="" /> <p>salmanfaris</p>
           </div>
-          <div
-            className={`side-link ${category === 18 ? "active" : ""}`}
-            onClick={() => setCategory(18)}
-          >
+          <div className="side-link">
             <img src={simon} alt="" /> <p>unnikrshnan</p>
           </div>
-          <div
-            className={`side-link ${category === 19 ? "active" : ""}`}
-            onClick={() => setCategory(19)}
-          >
+          <div className="side-link">
             <img src={megan} alt="" /> <p>saranya</p>
           </div>
-          <div
-            className={`side-link ${category === 20 ? "active" : ""}`}
-            onClick={() => setCategory(20)}
-          >
+          <div className="side-link">
             <img src={jack} alt="" /> <p>archana</p>
           </div>
-          <div
-            className={`side-link ${category === 30 ? "active" : ""}`}
-            onClick={() => setCategory(30)}
-          >
+          <div className="side-link">
             <img src={cameron} alt="" /> <p>mr beans</p>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import thumbline1 from "../assets/thumbnail1.png";
 import { Link } from "react-router-dom";
-import { api_key } from "../data";
+import { api_key, convertCount } from "../data";
+import moment from "moment/moment";
 
 const Feed = ({ category }) => {
   const [data, setData] = useState([]);
@@ -28,9 +28,12 @@ const Feed = ({ category }) => {
           className="card"
         >
           <img src={item.snippet.thumbnails.medium.url} alt="" />
-          <h2>Amazing place of thailand</h2>
-          <h3>SalmanVlog</h3>
-          <p>1 M views &#x2022; 19 hours ago</p>
+          <h2>{item.snippet.title} </h2>
+          <h3>{item.snippet.channelTitle}</h3>
+          <p>
+            {convertCount(item.statistics.viewCount)} views &bull;{" "}
+            {moment(item.snippet.publishedAt).fromNow()}
+          </p>
         </Link>
       ))}
     </div>
