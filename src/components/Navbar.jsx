@@ -6,6 +6,7 @@ import more from "../assets/more.png";
 import notification from "../assets/notification.png";
 import profile from "../assets/user_profile.jpg";
 import searchIcon from "../assets/search.png";
+import ytIcon from "../assets/youtube.svg";
 
 const Navbar = ({ setSidebar }) => {
   return (
@@ -17,6 +18,7 @@ const Navbar = ({ setSidebar }) => {
           alt="menuIcon"
         />
         <img className="logo" src={logo} alt="" />
+        <img className="logo__small" src={ytIcon} alt="" />
       </div>
       <div className="navbar__middile-side">
         <div className="search-box">

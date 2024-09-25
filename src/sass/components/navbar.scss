@@ -18,6 +18,17 @@
 
       ~ .logo {
         width: rem(120);
+        &__small {
+          display: none;
+        }
+      }
+    }
+    @include breakpointdown(sm) {
+      .logo {
+        display: none;
+        ~ .logo__small {
+          display: initial;
+        }
       }
     }
   }
