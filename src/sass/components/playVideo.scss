@@ -4,6 +4,10 @@
   flex-basis: 69%;
   margin-right: rem(5);
 
+  @include breakpointdown(md) {
+    flex-basis: 100%;
+  }
+
   p {
     color: $grayColor;
   }
@@ -18,6 +22,12 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: rem(20);
+
+    @include breakpointdown(sm) {
+      flex-direction: column;
+      align-items: start;
+      row-gap: rem(15);
+    }
 
     .views-times {
       width: max-content;
