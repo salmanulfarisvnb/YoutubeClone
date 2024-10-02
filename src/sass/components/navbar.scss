@@ -15,21 +15,21 @@
     img {
       width: rem(25);
       margin-right: rem(20);
+    }
 
-      ~ .logo {
-        width: rem(120);
-        &__small {
-          display: none;
-        }
+    .logo {
+      width: rem(120);
+      &__small {
+        display: none;
       }
     }
-    @include breakpointdown(sm) {
-      .logo {
-        display: none;
-        ~ .logo__small {
-          display: initial;
-          width: rem(28);
-        }
+  }
+  @include breakpointdown(sm) {
+    .logo {
+      display: none;
+      ~ .logo__small {
+        display: initial;
+        width: rem(28);
       }
     }
   }
